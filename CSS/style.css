@@ -1,102 +1,119 @@
-/* ===== RESET ===== */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <title>Vamsi Krishna Pothuru</title>
 
-/* ===== BODY ===== */
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    color: #222;
-    background: #ffffff;
-}
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-/* ===== NAVIGATION ===== */
+<body>
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    <!-- =========================
+         Navigation
+    ========================== -->
 
-    padding: 20px 10%;
+    <nav>
+        <div class="logo">
+            Vamsi Krishna Pothuru
+        </div>
 
-    background: white;
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="pages/research.html">Research</a></li>
+            <li><a href="pages/photography.html">Photography</a></li>
+            <li><a href="pages/travel.html">Travel</a></li>
+            <li><a href="pages/about.html">About</a></li>
+        </ul>
+    </nav>
 
-    position: sticky;
-    top: 0;
+    <!-- =========================
+         Hero Section
+    ========================== -->
 
-    border-bottom: 1px solid #eee;
-}
+    <header class="hero">
 
-.logo {
-    font-size: 1.4rem;
-    font-weight: bold;
-}
+        <div class="hero-content">
 
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 25px;
-}
+            <h1>Vamsi Krishna Pothuru</h1>
 
-nav a {
-    text-decoration: none;
-    color: #222;
-}
+            <h2>Researcher. Photographer. Traveller.</h2>
 
-nav a:hover {
-    color: #666;
-}
+            <p>
+                Exploring information ecosystems through research
+                and the world through photography.
+            </p>
 
-/* ===== HERO ===== */
+            <div class="status">
+                <span class="status-dot"></span>
+                Writing doctoral thesis
+            </div>
 
-.hero {
+            <div class="hero-buttons">
 
-    height: 90vh;
+                <a href="pages/research.html" class="btn-primary">
+                    Explore Research
+                </a>
 
-    display: flex;
+                <a href="pages/photography.html" class="btn-secondary">
+                    View Photography
+                </a>
 
-    flex-direction: column;
+            </div>
 
-    justify-content: center;
+        </div>
 
-    align-items: center;
+    </header>
 
-    text-align: center;
+    <!-- =========================
+         About Preview
+    ========================== -->
 
-    padding: 20px;
-}
+    <section class="about-preview">
 
-.hero h1 {
+        <h2>About</h2>
 
-    font-size: 3.5rem;
+        <p>
+            I am a doctoral researcher whose work focuses on misinformation,
+            information integrity, digital media, and digital literacy.
+            Alongside my academic work, I enjoy documenting places,
+            architecture, and everyday life through photography during my travels.
+        </p>
 
-    margin-bottom: 20px;
-}
+        <a href="pages/about.html" class="text-link">
+            Learn more →
+        </a>
 
-.hero p {
+    </section>
 
-    font-size: 1.3rem;
+    <!-- =========================
+         Footer
+    ========================== -->
 
-    max-width: 700px;
-}
+    <footer>
 
-/* ===== SECTION ===== */
+        <p>
+            © 2026 Vamsi Krishna Pothuru
+        </p>
 
-section{
+        <div class="footer-links">
 
-    width:80%;
+            <a href="mailto:your@email.com">Email</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
 
-    margin:auto;
+        </div>
 
-    padding:80px 0;
-}
+    </footer>
 
-h2{
-
-    margin-bottom:20px;
-}
+</body>
+</html>
