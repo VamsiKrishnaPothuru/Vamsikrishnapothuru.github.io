@@ -1,119 +1,182 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Basic Settings -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+/* =========================
+   BASE RESET
+========================= */
 
-    <title>Vamsi Krishna Pothuru</title>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+/* =========================
+   BODY
+========================= */
 
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background: #fff;
+}
 
-<body>
+/* =========================
+   NAVIGATION
+========================= */
 
-    <!-- =========================
-         Navigation
-    ========================== -->
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    border-bottom: 1px solid #eee;
+}
 
-    <nav>
-        <div class="logo">
-            Vamsi Krishna Pothuru
-        </div>
+nav .logo {
+    font-weight: 600;
+    font-size: 1rem;
+}
 
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="pages/research.html">Research</a></li>
-            <li><a href="pages/photography.html">Photography</a></li>
-            <li><a href="pages/travel.html">Travel</a></li>
-            <li><a href="pages/about.html">About</a></li>
-        </ul>
-    </nav>
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
 
-    <!-- =========================
-         Hero Section
-    ========================== -->
+nav a {
+    text-decoration: none;
+    color: #222;
+    font-size: 0.95rem;
+}
 
-    <header class="hero">
+nav a:hover {
+    opacity: 0.6;
+}
 
-        <div class="hero-content">
+/* =========================
+   HERO SECTION
+========================= */
 
-            <h1>Vamsi Krishna Pothuru</h1>
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 80vh;
+    padding: 40px 20px;
+}
 
-            <h2>Researcher. Photographer. Traveller.</h2>
+.hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
 
-            <p>
-                Exploring information ecosystems through research
-                and the world through photography.
-            </p>
+.hero-content h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #444;
+}
 
-            <div class="status">
-                <span class="status-dot"></span>
-                Writing doctoral thesis
-            </div>
+.hero-content p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    color: #555;
+}
 
-            <div class="hero-buttons">
+/* =========================
+   STATUS DOT
+========================= */
 
-                <a href="pages/research.html" class="btn-primary">
-                    Explore Research
-                </a>
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+    color: #444;
+}
 
-                <a href="pages/photography.html" class="btn-secondary">
-                    View Photography
-                </a>
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background: #00c853;
+    border-radius: 50%;
+    animation: blink 1.2s infinite;
+}
 
-            </div>
+@keyframes blink {
+    50% {
+        opacity: 0.3;
+    }
+}
 
-        </div>
+/* =========================
+   BUTTONS
+========================= */
 
-    </header>
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
 
-    <!-- =========================
-         About Preview
-    ========================== -->
+.btn-primary,
+.btn-secondary {
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
 
-    <section class="about-preview">
+.btn-primary {
+    background: #222;
+    color: white;
+}
 
-        <h2>About</h2>
+.btn-secondary {
+    border: 1px solid #222;
+    color: #222;
+}
 
-        <p>
-            I am a doctoral researcher whose work focuses on misinformation,
-            information integrity, digital media, and digital literacy.
-            Alongside my academic work, I enjoy documenting places,
-            architecture, and everyday life through photography during my travels.
-        </p>
+/* =========================
+   ABOUT SECTION
+========================= */
 
-        <a href="pages/about.html" class="text-link">
-            Learn more →
-        </a>
+.about-preview {
+    padding: 80px 10%;
+    text-align: center;
+}
 
-    </section>
+.about-preview h2 {
+    margin-bottom: 15px;
+}
 
-    <!-- =========================
-         Footer
-    ========================== -->
+.about-preview p {
+    max-width: 700px;
+    margin: 0 auto 15px;
+    color: #555;
+}
 
-    <footer>
+/* =========================
+   FOOTER
+========================= */
 
-        <p>
-            © 2026 Vamsi Krishna Pothuru
-        </p>
+footer {
+    padding: 40px 10%;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 0.9rem;
+}
 
-        <div class="footer-links">
+.footer-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
 
-            <a href="mailto:your@email.com">Email</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
-
-        </div>
-
-    </footer>
-
-</body>
-</html>
+.footer-links a {
+    text-decoration: none;
+    color: #222;
+}
