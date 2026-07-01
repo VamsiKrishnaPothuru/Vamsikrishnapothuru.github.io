@@ -284,3 +284,95 @@ footer {
     border-top: 1px solid #e5e5e5;
     margin: 40px 0;
 }
+
+/* =====================================================
+   RESEARCH PAGE
+===================================================== */
+
+.research-page {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Hero */
+
+.research-hero {
+    background: #f6f6f6;
+    padding: 90px 60px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.research-hero h1 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #23395B;
+    margin-bottom: 18px;
+}
+
+.research-hero h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.research-title {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.research-intro {
+    max-width: 650px;
+    line-height: 1.9;
+    color: #444;
+    font-size: 1.05rem;
+}
+
+/* Main Content */
+
+.research-content {
+    padding: 60px;
+}
+
+.research-section {
+    margin-bottom: 60px;
+}
+
+.research-section h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    color: #23395B;
+    margin-bottom: 20px;
+}
+
+.research-section hr {
+    border: none;
+    border-top: 1px solid #e3e3e3;
+    margin: 40px 0;
+}
+
+/* Links */
+
+.research-content a {
+    color: #23395B;
+    text-decoration: none;
+}
+
+.research-content a:hover {
+    text-decoration: underline;
+}
+
+/* Publications */
+
+.publication-list {
+    border-left: 2px solid #dddddd;
+    padding-left: 25px;
+}
+
+.publication {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
