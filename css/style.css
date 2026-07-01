@@ -674,10 +674,11 @@ font-size:3rem;
     transform: scale(1.02);
 }
 
-.gallery-item .photo-caption {
-    margin-top: 10px;
-    font-size: 0.92rem;
-    color: #666;
+.gallery-item figcaption{
+    margin-top:12px;
+    font-size:0.92rem;
+    color:#666;
+    line-height:1.5;
 }
 
 /* ---------- View Collection ---------- */
