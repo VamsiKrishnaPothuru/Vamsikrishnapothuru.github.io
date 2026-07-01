@@ -554,18 +554,14 @@ font-size:3rem;
 /* =====================================================
    PHOTOGRAPHY PAGE
 ===================================================== */
-
 .photo-banner {
     width: 100%;
-    height: 420px;
-    overflow: hidden;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .photo-banner img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
     display: block;
 }
 
@@ -638,7 +634,11 @@ font-size:3rem;
     max-width: 700px;
     line-height: 1.7;
 }
-
+.photo-caption{
+    margin-top:10px;
+    color:#666;
+    font-size:0.92rem;
+}
 /* ---------- Gallery ---------- */
 
 .gallery-grid {
