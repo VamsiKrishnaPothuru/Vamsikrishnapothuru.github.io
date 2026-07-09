@@ -746,3 +746,81 @@ font-size:3rem;
     }
 
 }
+
+/* ==========================================================
+LIGHTBOX
+========================================================== */
+
+.gallery-item a{
+
+display:block;
+
+cursor:zoom-in;
+
+}
+
+.gallery-item img{
+
+transition:.3s ease;
+
+-webkit-user-drag:none;
+
+user-select:none;
+
+}
+
+.gallery-item:hover img{
+
+transform:translateY(-4px);
+
+box-shadow:0 14px 30px rgba(0,0,0,.12);
+
+}
+
+img{
+
+-webkit-user-drag:none;
+
+-webkit-user-select:none;
+
+-moz-user-select:none;
+
+-ms-user-select:none;
+
+user-select:none;
+
+}
+
+.lb-data .lb-caption{
+
+font-size:15px;
+
+font-weight:500;
+
+}
+
+.lb-data .lb-number{
+
+font-size:13px;
+
+}
+
+.lb-image{
+
+border-radius:8px;
+
+}
+
+.lb-nav a.lb-prev,
+
+.lb-nav a.lb-next{
+
+opacity:1;
+
+}
+
+.lb-close{
+
+opacity:1 !important;
+
+}
