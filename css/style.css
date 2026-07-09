@@ -824,3 +824,50 @@ opacity:1;
 opacity:1 !important;
 
 }
+
+/* ---------- GLightbox ---------- */
+
+.goverlay{
+
+background:rgba(0,0,0,.94)!important;
+
+}
+
+.gslide-description{
+
+text-align:center;
+
+padding-top:20px;
+
+}
+
+.gslide-title{
+
+color:#fff!important;
+
+font-size:18px!important;
+
+font-weight:500!important;
+
+}
+
+.gprev,
+.gnext{
+
+opacity:1!important;
+
+transform:scale(1.2);
+
+}
+
+.gclose{
+
+opacity:1!important;
+
+}
+
+.gslide-image img{
+
+border-radius:8px;
+
+}

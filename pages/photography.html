@@ -11,9 +11,9 @@
 
     <link rel="stylesheet" href="../css/style.css">
 
-    <!-- Lightbox CSS -->
+    <!-- GLightbox CSS -->
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 
 </head>
 
@@ -107,7 +107,8 @@
             <figure class="gallery-item">
 
                 <a href="../images/landscapes/Delhi, India.jpg"
-                   data-lightbox="landscape"
+                   class="glightbox"   
+                   data-gallery="gallery"
                    data-title="Delhi, India">
 
                     <img src="../images/landscapes/Delhi, India.jpg"
@@ -129,7 +130,8 @@
             <figure class="gallery-item">
 
                 <a href="../images/landscapes/Jaipur, India.jpg"
-                   data-lightbox="landscape"
+                   class="glightbox"
+                   data-gallery="gallery"
                    data-title="Jaipur, India">
 
                     <img src="../images/landscapes/Jaipur, India.jpg"
@@ -151,7 +153,8 @@
             <figure class="gallery-item">
 
                 <a href="../images/landscapes/Nampally, Hyderabad, India.jpg"
-                   data-lightbox="landscape"
+                   class="glightbox"
+                   data-gallery="gallery"
                    data-title="Nampally, Hyderabad, India">
 
                     <img src="../images/landscapes/Nampally, Hyderabad, India.jpg"
@@ -173,7 +176,8 @@
             <figure class="gallery-item">
 
                 <a href="../images/landscapes/North Stradbroke Island, Australia.jpg"
-                   data-lightbox="landscape"
+                   class="glightbox"
+                   data-gallery="gallery"
                    data-title="North Stradbroke Island, Australia">
 
                     <img src="../images/landscapes/North Stradbroke Island, Australia.jpg"
@@ -195,7 +199,8 @@
             <figure class="gallery-item">
 
                 <a href="../images/landscapes/Sunrise at Buffalo Lake, UoH, Hyderabad, India.jpg"
-                   data-lightbox="landscape"
+                   class="glightbox"
+                   data-gallery="gallery"
                    data-title="Sunrise at Buffalo Lake, UoH, Hyderabad, India">
 
                     <img src="../images/landscapes/Sunrise at Buffalo Lake, UoH, Hyderabad, India.jpg"
@@ -217,7 +222,8 @@
             <figure class="gallery-item">
 
                 <a href="../images/landscapes/Varanasi, India.jpg"
-                   data-lightbox="landscape"
+                   class="glightbox"
+                   data-gallery="gallery"
                    data-title="Varanasi, India">
 
                     <img src="../images/landscapes/Varanasi, India.jpg"
@@ -277,25 +283,33 @@
 
 <!-- Lightbox JS -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
 <script>
 
-lightbox.option({
+const lightbox = GLightbox({
 
-resizeDuration:200,
+selector:'.glightbox',
 
-wrapAround:true,
+loop:true,
 
-fadeDuration:250,
+touchNavigation:true,
 
-imageFadeDuration:250,
+keyboardNavigation:true,
 
-disableScrolling:true,
+zoomable:true,
 
-albumLabel:"Photo %1 of %2"
+closeButton:true,
+
+openEffect:'zoom',
+
+closeEffect:'fade',
+
+slideEffect:'slide'
 
 });
+
+// Disable right-click
 
 document.addEventListener("contextmenu",function(e){
 
@@ -303,9 +317,11 @@ e.preventDefault();
 
 });
 
+// Disable dragging
+
 document.querySelectorAll("img").forEach(function(img){
 
-img.setAttribute("draggable","false");
+img.draggable=false;
 
 });
 
