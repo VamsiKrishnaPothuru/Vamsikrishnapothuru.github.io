@@ -887,15 +887,7 @@ background:rgba(0,0,0,.94)!important;
 }
 
 .gslide-description{
-
-background:#111!important;
-
-padding:18px!important;
-
-text-align:center;
-
-min-height:auto!important;
-
+    display:none !important;
 }
 
 .gslide-title{
