@@ -23,14 +23,47 @@ body {
    NAVIGATION
 ========================= */
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 8%;
-    border-bottom: 1px solid #eee;
+nav{
+    display:flex;
+    align-items:center;
+    gap:42px;
 }
 
+.site-header{
+
+    border-bottom:1px solid #eee;
+
+    background:#fff;
+
+}
+
+.site-header .container{
+
+    max-width:1200px;
+
+    margin:0 auto;
+
+    padding:24px 40px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.logo{
+
+    font-size:1.8rem;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    color:#111;
+
+}
 nav .logo {
     font-weight: 600;
     font-size: 1rem;
@@ -65,22 +98,42 @@ nav a:hover {
     padding: 40px 20px;
 }
 
-.hero-content h1 {
-    font-size: 2.8rem;
-    margin-bottom: 10px;
+.hero-content h1{
+
+    font-size:2.4rem;
+
+    font-weight:700;
+
+    line-height:1.15;
+
+    margin-bottom:20px;
+
 }
 
-.hero-content h2 {
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-bottom: 15px;
-    color: #444;
+.hero-content h2{
+
+    font-size:1rem;
+
+    font-weight:500;
+
+    color:#555;
+
+    margin-bottom:18px;
+
 }
 
-.hero-content p {
-    max-width: 600px;
-    margin: 0 auto 20px;
-    color: #555;
+.hero-content p{
+
+    max-width:620px;
+
+    margin:0 auto 24px;
+
+    font-size:1.05rem;
+
+    line-height:1.8;
+
+    color:#555;
+
 }
 
 /* =========================
@@ -835,9 +888,13 @@ background:rgba(0,0,0,.94)!important;
 
 .gslide-description{
 
+background:#111!important;
+
+padding:18px!important;
+
 text-align:center;
 
-padding-top:20px;
+min-height:auto!important;
 
 }
 
@@ -845,12 +902,20 @@ padding-top:20px;
 
 color:#fff!important;
 
-font-size:18px!important;
+font-size:17px!important;
 
 font-weight:500!important;
 
-}
+margin:0!important;
 
+line-height:1.4;
+
+}
+.gslide-desc{
+
+display:none!important;
+
+}
 .gprev,
 .gnext{
 
