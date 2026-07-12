@@ -78,6 +78,11 @@ nav ul {
     margin: 0;
     padding: 0;
 }
+
+nav ul li {
+    display: inline-block;
+}
+
 nav ul li a {
     text-decoration: none;
     color: #111;
