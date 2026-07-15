@@ -23,87 +23,51 @@ body {
    NAVIGATION
 ========================= */
 
-nav {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 28px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.site-header{
-
-    border-bottom:1px solid #eee;
-
-    background:#fff;
-
-}
-
-.site-header .container{
-
+nav{
     max-width:1200px;
-
     margin:0 auto;
-
-    padding:24px 40px;
-
+    padding:28px 40px;
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
 }
 
-.logo {
-    flex-shrink: 0;
-}
-.logo a {
-    text-decoration: none;
-    color: #111;
-    font-size: 18px;
-    font-weight: 700;
+.logo{
+    flex-shrink:0;
 }
 
-nav .logo {
-    font-weight: 600;
-    font-size: 1rem;
+.logo a{
+    text-decoration:none;
+    color:#111;
+    font-size:18px;
+    font-weight:700;
 }
 
-nav ul {
-    display: flex;
-    gap: 34px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+nav ul{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    list-style:none;
+    margin:0;
+    padding:0;
 }
 
-nav ul li {
-    display: inline-block;
+nav ul li{
+    list-style:none;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #111;
-    font-size: 16px;
-    font-weight: 500;
-    transition: color .2s ease;
+nav ul li a{
+    text-decoration:none;
+    color:#111;
+    font-size:16px;
+    font-weight:500;
+    transition:color .2s ease;
 }
 
-nav ul li a:hover {
-    color: #666;
+nav ul li a:hover{
+    color:#666;
 }
 
-nav a {
-    text-decoration: none;
-    color: #222;
-    font-size: 0.95rem;
-}
-
-nav a:hover {
-    opacity: 0.6;
-}
 
 /* =========================
    HERO SECTION
