@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Street Photography | Vamsi Krishna Pothuru</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- GLightbox -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="nav-left">
+            <a href="../index.html" class="logo">
+                Vamsi Krishna Pothuru
+            </a>
+        </div>
+
+        <div class="nav-right">
+            <a href="../index.html">Home</a>
+            <a href="research.html">Research</a>
+            <a href="photography.html">Photography</a>
+            <a href="travel.html">Travel</a>
+            <a href="about.html">About</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Photography -->
+    <main class="photo-layout">
+
+        <!-- Sidebar -->
+        <aside class="photo-sidebar">
+
+            <h1 class="photo-title">
+                Photography
+            </h1>
+
+            <nav class="photo-nav">
+
+                <a href="photography.html">
+                    Landscapes
+                </a>
+
+                <a href="street.html" class="active">
+                    Street
+                </a>
+
+                <a href="architecture.html">
+                    Architecture
+                </a>
+
+                <a href="travel.html">
+                    Travel
+                </a>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <section class="photo-content">
+
+            <h2 class="collection-title">
+                Street
+            </h2>
+
+            <div class="gallery-grid">
+
+
+                <!-- ADD YOUR STREET PHOTOGRAPHS HERE -->
+
+
+                <!-- Example:
+
+                <figure class="gallery-item">
+
+                    <a href="../images/street/Your Photo.jpg"
+                       class="glightbox"
+                       data-gallery="street"
+                       data-title="Your Photo">
+
+                        <img src="../images/street/Your Photo.jpg"
+                             alt="Your Photo"
+                             draggable="false">
+
+                    </a>
+
+                    <figcaption>
+                        Your Photo
+                    </figcaption>
+
+                </figure>
+
+                -->
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="footer-left">
+            © Vamsi Krishna Pothuru
+        </div>
+
+        <div class="footer-right">
+            researcher. photographer. traveller.
+        </div>
+
+    </footer>
+
+
+    <!-- GLightbox -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    <script>
+
+        const lightbox = GLightbox({
+            selector: '.glightbox',
+            loop: true,
+            touchNavigation: true,
+            keyboardNavigation: true,
+            zoomable: true,
+            closeButton: true,
+            openEffect: 'zoom',
+            closeEffect: 'fade',
+            slideEffect: 'slide'
+        });
+
+    </script>
+
+
+    <!-- Disable right click -->
+    <script>
+
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener('dragstart', function(e) {
+            if (e.target.tagName === 'IMG') {
+                e.preventDefault();
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
